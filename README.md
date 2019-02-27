@@ -29,6 +29,37 @@ You will need the following things properly installed on your computer.
 * `ember test`
 * `ember test --server`
 
+<<<<<<< HEAD
+||||||| parent of dc8937f... message
+### Linting
+
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
+
+### Building
+
+* `ember build` (development)
+* `ember build --environment production` (production)
+
+### Deploying
+
+Specify what it takes to deploy your app.
+=======
+### Linting
+
+* `npm run lint:hbs`
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
+
+### Building
+
+* `ember build` (development)
+* `ember build --environment production` (production)
+
+### Deploying
+
+Specify what it takes to deploy your app.
+>>>>>>> dc8937f... message
 
 ## Further Reading / Useful Links
 
