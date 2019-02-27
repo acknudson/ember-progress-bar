@@ -608,7 +608,7 @@
     globals "^11.1.0"
     lodash "^4.17.11"
 
-"@babel/types@^7.0.0", "@babel/types@^7.2.0", "@babel/types@^7.2.2", "@babel/types@^7.3.0", "@babel/types@^7.3.4":
+"@babel/types@^7.0.0", "@babel/types@^7.1.5", "@babel/types@^7.2.0", "@babel/types@^7.2.2", "@babel/types@^7.3.0", "@babel/types@^7.3.4":
   version "7.3.4"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@babel/types/-/types-7.3.4.tgz#bf482eaeaffb367a28abbf9357a94963235d90ed"
   integrity sha1-v0gurq/7Nnooq7+TV6lJYyNdkO0=
@@ -641,7 +641,7 @@
     silent-error "^1.1.0"
     util.promisify "^1.0.0"
 
-"@ember/ordered-set@^2.0.0":
+"@ember/ordered-set@^2.0.3":
   version "2.0.3"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/@ember/ordered-set/-/ordered-set-2.0.3.tgz#2ac1ca73b3bd116063cae814898832ef434a57f9"
   integrity sha1-KsHKc7O9EWBjyugUiYgy70NKV/k=
@@ -1159,10 +1159,13 @@ babel-plugin-feature-flags@^0.3.1:
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/babel-plugin-feature-flags/-/babel-plugin-feature-flags-0.3.1.tgz#9c827cf9a4eb9a19f725ccb239e85cab02036fc1"
   integrity sha1-nIJ8+aTrmhn3JcyyOehcqwIDb8E=
 
-babel-plugin-filter-imports@^0.3.1:
-  version "0.3.1"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/babel-plugin-filter-imports/-/babel-plugin-filter-imports-0.3.1.tgz#e7859b56886b175dd2616425d277b219e209ea8b"
-  integrity sha1-54WbVohrF13SYWQl0neyGeIJ6os=
+babel-plugin-filter-imports@^2.0.3:
+  version "2.0.4"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/babel-plugin-filter-imports/-/babel-plugin-filter-imports-2.0.4.tgz#9209b708ed3b228349c4e6f660358bf02685e803"
+  integrity sha1-kgm3CO07IoNJxOb2YDWL8CaF6AM=
+  dependencies:
+    "@babel/types" "^7.1.5"
+    lodash "^4.17.11"
 
 babel-plugin-htmlbars-inline-precompile@^0.2.5:
   version "0.2.6"
@@ -1218,7 +1221,7 @@ babel-plugin-transform-es2015-block-scoped-functions@^6.22.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-es2015-block-scoping@^6.23.0, babel-plugin-transform-es2015-block-scoping@^6.26.0:
+babel-plugin-transform-es2015-block-scoping@^6.23.0:
   version "6.26.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/babel-plugin-transform-es2015-block-scoping/-/babel-plugin-transform-es2015-block-scoping-6.26.0.tgz#d70f5299c1308d05c12f463813b0a09e73b1895f"
   integrity sha1-1w9SmcEwjQXBL0Y4E7CgnnOxiV8=
@@ -1675,10 +1678,10 @@ braces@^2.3.1:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-broccoli-amd-funnel@^1.3.0:
-  version "1.3.0"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/broccoli-amd-funnel/-/broccoli-amd-funnel-1.3.0.tgz#c4426b4fce976e44295bd74f34725f53bdeb08e3"
-  integrity sha1-xEJrT86XbkQpW9dPNHJfU73rCOM=
+broccoli-amd-funnel@^2.0.1:
+  version "2.0.1"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/broccoli-amd-funnel/-/broccoli-amd-funnel-2.0.1.tgz#dbdbfd28841731342d538126567c25bea3f15310"
+  integrity sha1-29v9KIQXMTQtU4EmVnwlvqPxUxA=
   dependencies:
     broccoli-plugin "^1.3.0"
     symlink-or-copy "^1.2.0"
@@ -1782,7 +1785,7 @@ broccoli-clean-css@^1.1.0:
     inline-source-map-comment "^1.0.5"
     json-stable-stringify "^1.0.0"
 
-broccoli-concat@^3.5.1:
+broccoli-concat@^3.7.3:
   version "3.7.3"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/broccoli-concat/-/broccoli-concat-3.7.3.tgz#0dca01311567ffb13180e6b4eb111824628e4885"
   integrity sha1-DcoBMRVn/7ExgOa06xEYJGKOSIU=
@@ -1969,7 +1972,7 @@ broccoli-module-unification-reexporter@^1.0.0:
     mkdirp "^0.5.1"
     walk-sync "^0.3.2"
 
-broccoli-node-info@^1.1.0:
+broccoli-node-info@1.1.0, broccoli-node-info@^1.1.0:
   version "1.1.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/broccoli-node-info/-/broccoli-node-info-1.1.0.tgz#3aa2e31e07e5bdb516dd25214f7c45ba1c459412"
   integrity sha1-OqLjHgflvbUW3SUhT3xFuhxFlBI=
@@ -2108,6 +2111,30 @@ broccoli-uglify-sourcemap@^2.1.1:
     terser "^3.7.5"
     walk-sync "^0.3.2"
     workerpool "^2.3.0"
+
+broccoli@^2.0.0:
+  version "2.0.1"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/broccoli/-/broccoli-2.0.1.tgz#3611d643bf4b2666b565dc24cc5307fc80f62bf6"
+  integrity sha1-NhHWQ79LJma1ZdwkzFMH/ID2K/Y=
+  dependencies:
+    broccoli-node-info "1.1.0"
+    broccoli-slow-trees "^3.0.1"
+    broccoli-source "^1.1.0"
+    commander "^2.15.1"
+    connect "^3.6.6"
+    findup-sync "^2.0.0"
+    handlebars "^4.0.11"
+    heimdalljs "^0.2.5"
+    heimdalljs-logger "^0.1.9"
+    mime-types "^2.1.19"
+    promise.prototype.finally "^3.1.0"
+    resolve-path "^1.4.0"
+    rimraf "^2.6.2"
+    sane "^4.0.0"
+    tmp "0.0.33"
+    tree-sync "^1.2.2"
+    underscore.string "^3.2.2"
+    watch-detector "^0.1.0"
 
 browserslist@^3.2.6:
   version "3.2.8"
@@ -2405,7 +2432,7 @@ commander@2.8.x:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-commander@^2.6.0:
+commander@^2.15.1, commander@^2.6.0:
   version "2.19.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
   integrity sha1-9hmKqE5bg8RgVLlN3tv+1e6f8So=
@@ -2481,6 +2508,16 @@ configstore@^4.0.0:
     unique-string "^1.0.0"
     write-file-atomic "^2.0.0"
     xdg-basedir "^3.0.0"
+
+connect@^3.6.6:
+  version "3.6.6"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/connect/-/connect-3.6.6.tgz#09eff6c55af7236e137135a72574858b6786f524"
+  integrity sha1-Ce/2xVr3I24TcTWnJXSFi2eG9SQ=
+  dependencies:
+    debug "2.6.9"
+    finalhandler "1.1.0"
+    parseurl "~1.3.2"
+    utils-merge "1.0.1"
 
 console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
@@ -2767,7 +2804,7 @@ ember-cli-app-version@^3.2.0:
     ember-cli-babel "^6.12.0"
     git-repo-version "^1.0.2"
 
-ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.11.0, ember-cli-babel@^6.12.0, ember-cli-babel@^6.16.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
+ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.12.0, ember-cli-babel@^6.16.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
   version "6.18.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-cli-babel/-/ember-cli-babel-6.18.0.tgz#3f6435fd275172edeff2b634ee7b29ce74318957"
   integrity sha1-P2Q1/SdRcu3v8rY07nspznQxiVc=
@@ -2786,7 +2823,7 @@ ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6
     ember-cli-version-checker "^2.1.2"
     semver "^5.5.0"
 
-ember-cli-babel@^7.1.3:
+ember-cli-babel@^7.1.2, ember-cli-babel@^7.1.3:
   version "7.5.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-cli-babel/-/ember-cli-babel-7.5.0.tgz#af654dcef23630391d2efe85aaa3bdf8b6ca17b7"
   integrity sha1-r2VNzvI2MDkdLv6FqqO9+LbKF7c=
@@ -2908,14 +2945,6 @@ ember-cli-preprocess-registry@^3.1.2:
     debug "^3.0.1"
     process-relative-require "^1.0.0"
 
-ember-cli-qunit@^4.3.2:
-  version "4.4.0"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-cli-qunit/-/ember-cli-qunit-4.4.0.tgz#0edd7d651001d0d7ea200b9236a4733a5b7420f1"
-  integrity sha1-Dt19ZRAB0NfqIAuSNqRzOlt0IPE=
-  dependencies:
-    ember-cli-babel "^6.11.0"
-    ember-qunit "^3.5.0"
-
 ember-cli-sri@^2.1.1:
   version "2.1.1"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-cli-sri/-/ember-cli-sri-2.1.1.tgz#971620934a4b9183cf7923cc03e178b83aa907fd"
@@ -2950,13 +2979,6 @@ ember-cli-uglify@^2.1.0:
     broccoli-uglify-sourcemap "^2.1.1"
     lodash.defaultsdeep "^4.6.0"
 
-ember-cli-valid-component-name@^1.0.0:
-  version "1.0.0"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-cli-valid-component-name/-/ember-cli-valid-component-name-1.0.0.tgz#71550ce387e0233065f30b30b1510aa2dfbe87ef"
-  integrity sha1-cVUM44fgIzBl8wswsVEKot++h+8=
-  dependencies:
-    silent-error "^1.0.0"
-
 ember-cli-version-checker@^2.0.0, ember-cli-version-checker@^2.1.0, ember-cli-version-checker@^2.1.1, ember-cli-version-checker@^2.1.2:
   version "2.2.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-cli-version-checker/-/ember-cli-version-checker-2.2.0.tgz#47771b731fe0962705e27c8199a9e3825709f3b3"
@@ -2973,19 +2995,20 @@ ember-cli-version-checker@^3.0.0:
     resolve "^1.9.0"
     semver "^5.6.0"
 
-ember-cli@~3.4.4:
-  version "3.4.4"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-cli/-/ember-cli-3.4.4.tgz#8d25b223b2ef3b863310099192da92ab1feeef6b"
-  integrity sha1-jSWyI7LvO4YzEAmRktqSqx/u72s=
+ember-cli@~3.6.1:
+  version "3.6.1"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-cli/-/ember-cli-3.6.1.tgz#2a8394bb6d3859d3cdb9e6e79d6d7455f80db9e1"
+  integrity sha1-KoOUu204WdPNuebnnW10VfgNueE=
   dependencies:
     amd-name-resolver "^1.2.0"
     babel-plugin-transform-es2015-modules-amd "^6.24.1"
     bower-config "^1.3.0"
     bower-endpoint-parser "0.2.2"
-    broccoli-amd-funnel "^1.3.0"
+    broccoli "^2.0.0"
+    broccoli-amd-funnel "^2.0.1"
     broccoli-babel-transpiler "^6.5.0"
     broccoli-builder "^0.18.14"
-    broccoli-concat "^3.5.1"
+    broccoli-concat "^3.7.3"
     broccoli-config-loader "^1.0.1"
     broccoli-config-replace "^1.1.2"
     broccoli-debug "^0.6.4"
@@ -3015,12 +3038,13 @@ ember-cli@~3.4.4:
     ember-cli-preprocess-registry "^3.1.2"
     ember-cli-string-utils "^1.1.0"
     ensure-posix-path "^1.0.2"
-    execa "^0.10.0"
+    execa "^1.0.0"
     exit "^0.1.2"
     express "^4.16.3"
     filesize "^3.6.1"
     find-up "^3.0.0"
     find-yarn-workspace-root "^1.1.0"
+    fixturify "^0.3.4"
     fixturify-project "^1.5.3"
     fs-extra "^7.0.0"
     fs-tree-diff "^0.5.7"
@@ -3051,7 +3075,7 @@ ember-cli@~3.4.4:
     quick-temp "^0.1.8"
     resolve "^1.8.1"
     rsvp "^4.8.3"
-    sane "^3.0.0"
+    sane "^4.0.0"
     semver "^5.5.0"
     silent-error "^1.1.0"
     sort-package-json "^1.15.0"
@@ -3075,25 +3099,24 @@ ember-compatibility-helpers@^1.1.1:
     ember-cli-version-checker "^2.1.1"
     semver "^5.4.1"
 
-ember-data@~3.4.0:
-  version "3.4.4"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-data/-/ember-data-3.4.4.tgz#a201c2db1d7ca2cbe59a23ddf3cb96281fce216f"
-  integrity sha1-ogHC2x18osvlmiPd88uWKB/OIW8=
+ember-data@~3.6.0:
+  version "3.6.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-data/-/ember-data-3.6.0.tgz#6853983d6ab21f578b62b41b14f45c7b6f502aff"
+  integrity sha1-aFOYPWqyH1eLYrQbFPRce29QKv8=
   dependencies:
-    "@ember/ordered-set" "^2.0.0"
+    "@ember/ordered-set" "^2.0.3"
     babel-plugin-feature-flags "^0.3.1"
-    babel-plugin-filter-imports "^0.3.1"
-    babel-plugin-transform-es2015-block-scoping "^6.26.0"
+    babel-plugin-filter-imports "^2.0.3"
     babel6-plugin-strip-class-callcheck "^6.0.0"
     babel6-plugin-strip-heimdall "^6.0.1"
-    broccoli-debug "^0.6.4"
+    broccoli-debug "^0.6.5"
     broccoli-file-creator "^2.1.1"
     broccoli-funnel "^2.0.1"
-    broccoli-merge-trees "^3.0.0"
+    broccoli-merge-trees "^3.0.1"
     broccoli-rollup "^2.1.1"
     calculate-cache-key-for-tree "^1.1.0"
     chalk "^2.4.1"
-    ember-cli-babel "^6.16.0"
+    ember-cli-babel "^7.1.2"
     ember-cli-path-utils "^1.0.0"
     ember-cli-string-utils "^1.1.0"
     ember-cli-test-info "^1.0.0"
@@ -3104,8 +3127,8 @@ ember-data@~3.4.0:
     inflection "^1.12.0"
     npm-git-info "^1.0.3"
     resolve "^1.8.1"
-    semver "^5.5.0"
-    silent-error "^1.1.0"
+    semver "^5.6.0"
+    silent-error "^1.1.1"
 
 ember-export-application-global@^2.0.0:
   version "2.0.0"
@@ -3145,7 +3168,7 @@ ember-maybe-import-regenerator@^0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
-ember-qunit@^3.5.0:
+ember-qunit@^3.4.1:
   version "3.5.3"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-qunit/-/ember-qunit-3.5.3.tgz#bfd0bff8298c78c77e870cca43fe0826e78a0d09"
   integrity sha1-v9C/+CmMeMd+hwzKQ/4IJueKDQk=
@@ -3193,20 +3216,20 @@ ember-sinon@^3.1.0:
     ember-cli-babel "^7.1.3"
     sinon "^7.1.1"
 
-ember-source@~3.4.0:
-  version "3.4.8"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-source/-/ember-source-3.4.8.tgz#68677bf9bd222aff865100b241004649c3d3dda7"
-  integrity sha1-aGd7+b0iKv+GUQCyQQBGScPT3ac=
+ember-source@~3.6.0:
+  version "3.6.1"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/ember-source/-/ember-source-3.6.1.tgz#61a286e4a954e2e514a25df6d97bfe5a380c1cfd"
+  integrity sha1-YaKG5KlU4uUUol322Xv+WjgMHP0=
   dependencies:
     broccoli-funnel "^2.0.1"
     broccoli-merge-trees "^2.0.0"
     chalk "^2.3.0"
+    ember-cli-babel "^7.1.3"
     ember-cli-get-component-path-option "^1.0.0"
     ember-cli-is-package-missing "^1.0.0"
     ember-cli-normalize-entity-name "^1.0.0"
     ember-cli-path-utils "^1.0.0"
     ember-cli-string-utils "^1.1.0"
-    ember-cli-valid-component-name "^1.0.0"
     ember-cli-version-checker "^2.1.0"
     ember-router-generator "^1.2.3"
     inflection "^1.12.0"
@@ -3222,7 +3245,7 @@ ember-welcome-page@^3.2.0:
     ember-cli-babel "^6.6.0"
     ember-cli-htmlbars "^2.0.3"
 
-encodeurl@~1.0.2:
+encodeurl@~1.0.1, encodeurl@~1.0.2:
   version "1.0.2"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
@@ -3299,7 +3322,7 @@ error@^7.0.0:
     string-template "~0.2.1"
     xtend "~4.0.0"
 
-es-abstract@^1.5.1:
+es-abstract@^1.5.1, es-abstract@^1.9.0:
   version "1.13.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/es-abstract/-/es-abstract-1.13.0.tgz#ac86145fdd5099d8dd49558ccba2eaf9b88e24e9"
   integrity sha1-rIYUX91QmdjdSVWMy6Lq+biOJOk=
@@ -3386,18 +3409,10 @@ exec-sh@^0.2.0:
   dependencies:
     merge "^1.2.0"
 
-execa@^0.10.0:
-  version "0.10.0"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/execa/-/execa-0.10.0.tgz#ff456a8f53f90f8eccc71a96d11bdfc7f082cb50"
-  integrity sha1-/0Vqj1P5D47MxxqW0Rvfx/CCy1A=
-  dependencies:
-    cross-spawn "^6.0.0"
-    get-stream "^3.0.0"
-    is-stream "^1.1.0"
-    npm-run-path "^2.0.0"
-    p-finally "^1.0.0"
-    signal-exit "^3.0.0"
-    strip-eof "^1.0.0"
+exec-sh@^0.3.2:
+  version "0.3.2"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/exec-sh/-/exec-sh-0.3.2.tgz#6738de2eb7c8e671d0366aea0b0db8c6f7d7391b"
+  integrity sha1-ZzjeLrfI5nHQNmrqCw24xvfXORs=
 
 execa@^1.0.0:
   version "1.0.0"
@@ -3597,6 +3612,19 @@ fill-range@^4.0.0:
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
 
+finalhandler@1.1.0:
+  version "1.1.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/finalhandler/-/finalhandler-1.1.0.tgz#ce0b6855b45853e791b2fcc680046d88253dd7f5"
+  integrity sha1-zgtoVbRYU+eRsvzGgARtiCU91/U=
+  dependencies:
+    debug "2.6.9"
+    encodeurl "~1.0.1"
+    escape-html "~1.0.3"
+    on-finished "~2.3.0"
+    parseurl "~1.3.2"
+    statuses "~1.3.1"
+    unpipe "~1.0.0"
+
 finalhandler@1.1.1:
   version "1.1.1"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/finalhandler/-/finalhandler-1.1.1.tgz#eebf4ed840079c83f4249038c9d703008301b105"
@@ -3653,7 +3681,7 @@ find-yarn-workspace-root@^1.1.0:
     fs-extra "^4.0.3"
     micromatch "^3.1.4"
 
-findup-sync@2.0.0:
+findup-sync@2.0.0, findup-sync@^2.0.0:
   version "2.0.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/findup-sync/-/findup-sync-2.0.0.tgz#9326b1488c22d1a6088650a86901b2d9a90a2cbc"
   integrity sha1-kyaxSIwi0aYIhlCoaQGy2akKLLw=
@@ -3856,11 +3884,6 @@ get-stdin@^4.0.1:
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
   integrity sha1-uWjGsKBDhDJJAui/Gl3zJXmkUP4=
 
-get-stream@^3.0.0:
-  version "3.0.0"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/get-stream/-/get-stream-3.0.0.tgz#8e943d1358dc37555054ecbe2edb05aa174ede14"
-  integrity sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ=
-
 get-stream@^4.0.0:
   version "4.1.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/get-stream/-/get-stream-4.1.0.tgz#c1b255575f3dc21d59bfc79cd3d2b46b1c3a54b5"
@@ -3958,7 +3981,7 @@ growly@^1.3.0:
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
   integrity sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
 
-handlebars@^4.0.4:
+handlebars@^4.0.11, handlebars@^4.0.4:
   version "4.1.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/handlebars/-/handlebars-4.1.0.tgz#0d6a6f34ff1f63cecec8423aa4169827bf787c3a"
   integrity sha1-DWpvNP8fY87OyEI6pBaYJ794fDo=
@@ -5249,7 +5272,7 @@ micromatch@^3.0.4, micromatch@^3.1.10, micromatch@^3.1.4:
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/mime-db/-/mime-db-1.38.0.tgz#1a2aab16da9eb167b49c6e4df2d9c68d63d8e2ad"
   integrity sha1-GiqrFtqesWe0nG5N8tnGjWPY4q0=
 
-mime-types@^2.1.18, mime-types@~2.1.18:
+mime-types@^2.1.18, mime-types@^2.1.19, mime-types@~2.1.18:
   version "2.1.22"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/mime-types/-/mime-types-2.1.22.tgz#fe6b355a190926ab7698c9a0556a11199b2199bd"
   integrity sha1-/ms1WhkJJqt2mMmgVWoRGZshmb0=
@@ -5779,7 +5802,7 @@ path-exists@^3.0.0:
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/path-exists/-/path-exists-3.0.0.tgz#ce0ebeaa5f78cb18925ea7d810d7b59b010fd515"
   integrity sha1-zg6+ql94yxiSXqfYENe1mwEP1RU=
 
-path-is-absolute@^1.0.0, path-is-absolute@^1.0.1:
+path-is-absolute@1.0.1, path-is-absolute@^1.0.0, path-is-absolute@^1.0.1:
   version "1.0.1"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/path-is-absolute/-/path-is-absolute-1.0.1.tgz#174b9268735534ffbc7ace6bf53a5a9e1b5c5f5f"
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
@@ -5911,6 +5934,15 @@ promise-map-series@^0.2.1, promise-map-series@^0.2.3:
   dependencies:
     rsvp "^3.0.14"
 
+promise.prototype.finally@^3.1.0:
+  version "3.1.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/promise.prototype.finally/-/promise.prototype.finally-3.1.0.tgz#66f161b1643636e50e7cf201dc1b84a857f3864e"
+  integrity sha1-ZvFhsWQ2NuUOfPIB3BuEqFfzhk4=
+  dependencies:
+    define-properties "^1.1.2"
+    es-abstract "^1.9.0"
+    function-bind "^1.1.1"
+
 proxy-addr@~2.0.4:
   version "2.0.4"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/proxy-addr/-/proxy-addr-2.0.4.tgz#ecfc733bf22ff8c6f407fa275327b9ab67e48b93"
@@ -5946,13 +5978,13 @@ quick-temp@^0.1.2, quick-temp@^0.1.3, quick-temp@^0.1.5, quick-temp@^0.1.8:
     rimraf "^2.5.4"
     underscore.string "~3.3.4"
 
-qunit-dom@^0.7.1:
-  version "0.7.1"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/qunit-dom/-/qunit-dom-0.7.1.tgz#2e6ad4a6453c034f88ef415250b37e82572460b9"
-  integrity sha1-LmrUpkU8A0+I70FSULN+glckYLk=
+qunit-dom@^0.8.0:
+  version "0.8.4"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/qunit-dom/-/qunit-dom-0.8.4.tgz#8b75a73040df1735280fc2fab4c6a1a7f518488b"
+  integrity sha1-i3WnMEDfFzUoD8L6tMahp/UYSIs=
   dependencies:
     broccoli-funnel "^2.0.0"
-    broccoli-merge-trees "^2.0.0"
+    broccoli-merge-trees "^3.0.1"
 
 qunit@~2.6.0:
   version "2.6.2"
@@ -6216,6 +6248,14 @@ resolve-dir@^1.0.0, resolve-dir@^1.0.1:
     expand-tilde "^2.0.0"
     global-modules "^1.0.0"
 
+resolve-path@^1.4.0:
+  version "1.4.0"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/resolve-path/-/resolve-path-1.4.0.tgz#c4bda9f5efb2fce65247873ab36bb4d834fe16f7"
+  integrity sha1-xL2p9e+y/OZSR4c6s2u02DT+Fvc=
+  dependencies:
+    http-errors "~1.6.2"
+    path-is-absolute "1.0.1"
+
 resolve-url@^0.2.1:
   version "0.2.1"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
@@ -6370,22 +6410,20 @@ sane@^2.4.1, sane@^2.5.2:
   optionalDependencies:
     fsevents "^1.2.3"
 
-sane@^3.0.0:
-  version "3.1.0"
-  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/sane/-/sane-3.1.0.tgz#995193b7dc1445ef1fe41ddfca2faf9f111854c6"
-  integrity sha1-mVGTt9wURe8f5B3fyi+vnxEYVMY=
+sane@^4.0.0:
+  version "4.0.2"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/sane/-/sane-4.0.2.tgz#5bd4a3f1268fd7a921a2dc657047de635c8f8f25"
+  integrity sha1-W9Sj8SaP16khotxlcEfeY1yPjyU=
   dependencies:
     anymatch "^2.0.0"
     capture-exit "^1.2.0"
-    exec-sh "^0.2.0"
+    exec-sh "^0.3.2"
     execa "^1.0.0"
     fb-watchman "^2.0.0"
     micromatch "^3.1.4"
     minimist "^1.1.1"
     walker "~1.0.5"
     watch "~0.18.0"
-  optionalDependencies:
-    fsevents "^1.2.3"
 
 sax@^1.2.4:
   version "1.2.4"
@@ -6478,7 +6516,7 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
-silent-error@^1.0.0, silent-error@^1.0.1, silent-error@^1.1.0:
+silent-error@^1.0.0, silent-error@^1.0.1, silent-error@^1.1.0, silent-error@^1.1.1:
   version "1.1.1"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/silent-error/-/silent-error-1.1.1.tgz#f72af5b0d73682a2ba1778b7e32cd8aa7c2d8662"
   integrity sha1-9yr1sNc2gqK6F3i34yzYqnwthmI=
@@ -6740,6 +6778,11 @@ static-extend@^0.1.1:
   version "1.5.0"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
+
+statuses@~1.3.1:
+  version "1.3.1"
+  resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/statuses/-/statuses-1.3.1.tgz#faf51b9eb74aaef3b3acf4ad5f61abf24cb7b93e"
+  integrity sha1-+vUbnrdKrvOzrPStX2Gr8ky3uT4=
 
 statuses@~1.4.0:
   version "1.4.0"
@@ -7070,7 +7113,7 @@ uglify-js@^3.1.4:
     commander "~2.17.1"
     source-map "~0.6.1"
 
-underscore.string@~3.3.4:
+underscore.string@^3.2.2, underscore.string@~3.3.4:
   version "3.3.5"
   resolved "https://artifactory.global.square/artifactory/api/npm/square-npm/underscore.string/-/underscore.string-3.3.5.tgz#fc2ad255b8bd309e239cbc5816fd23a9b7ea4023"
   integrity sha1-/CrSVbi9MJ4jnLxYFv0jqbfqQCM=
