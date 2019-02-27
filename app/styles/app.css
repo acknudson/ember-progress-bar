@@ -1,0 +1,37 @@
+.progress-bar__grey-background {
+  height: 16px;
+  border-radius: 16px;
+  background: grey;
+}
+
+.progress-bar__progression {
+  width: 2.5%;
+  height: 100%;
+  background-color: skyblue;
+  border-radius: 16px;
+}
+
+.progress-bar__progression--1 {
+  width: 13%;
+  transition: width 8.8s ease-in;
+}
+
+.progress-bar__progression--2 {
+  width: 26%;
+  transition: width 13.3s linear;
+}
+
+.progress-bar__progression--3 {
+  width: 63%;
+  transition: width 11.1s linear;
+}
+
+.progress-bar__progression--4 {
+  width: 77%;
+  transition: width 23.7s ease-out;
+}
+
+.progress-bar__progression--5 {
+  width: 100%;
+  transition: width 60s ease-out;
+}
